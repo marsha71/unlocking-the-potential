@@ -4,12 +4,12 @@
 # Website: strivevirtually.net
 
 # vCenter Server used to deploy VCF Import Lab
-$VIServer = "FILL_ME_IN"
-$VIUsername = "FILL_ME_IN"
-$VIPassword = "FILL_ME_IN"
+$VIServer   = "vcmain.bullies.local"
+$VIUsername = "administrator@bullies.local"
+$VIPassword = "VMware123!"
 
 # Full Path to the Nested ESXi 8.0u3b OVA, SDDC 5.2.1.0 OVA, VCF Import Tool 5.2.1.0 & Extracted VCSA 8.0.3d ISO
-$NestedESXiApplianceOVA = "L:\Downloads\Nested_ESXi8.0u3b_Appliance_Template_v1.ova"
+$NestedESXiApplianceOVA = "/users/mc006068broadcom.net/downloads/Nested_ESXi8.0u3b_Appliance_Template_v1.ova"
 $VCSAInstallerPath = "L:\Downloads\VMware-VCSA-all-8.0.3-24322831"
 $SDDCManagerOVA = "L:\Downloads\VCF-SDDC-Manager-Appliance-5.2.1.0-24307856.ova"
 $VCFImportToolpath = "L:\Downloads\vcf-brownfield-import-5.2.1.0-24307788.tar.gz"
@@ -20,7 +20,7 @@ $NsxSpecJsonPath = "L:\Downloads\nsx-deployment-spec.json"
 
 # Nested ESXi VMs to deploy
 $NestedESXiHostnameToIPs = @{
-    "esxi-01" = "172.30.0.101"
+    "esxi-01" = "192.168.1.101"
     "esxi-02" = "172.30.0.102"
     "esxi-03" = "172.30.0.103"
     "esxi-04" = "172.30.0.104"
